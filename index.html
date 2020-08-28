@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Aphiwe Magama | Full-Stack Web Developer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link type="text/css" rel="stylesheet" href="css/fontawesome/css/fontawesome-all.min.css" />
+        
+        <!--SEO Metatags-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="Aphiwe Magama, Web Designer, Web Developer, SEO Engineer, Content Developer, Logo Design, Mobile App Developer, Freelance Web Developer" />
+        
+        <!--Facebook Share Metatags-->
+        <meta property="fb:app_id" content="453891951818018" />
+        <meta property="og:title" content="Aphiwe Magama - Web Developer Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://aphiwemagama.github.io/img/facebook.png" />
+        <meta property="og:url" content="http://aphiwemagama.github.io" />
+        <meta property="og:description" content="" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        
+        <style>
+            html {scroll-behavior: smooth;}
+            body{background-color: white; color: black; font-family: 'Roboto', serif;}
+            .navbar-custom{background-color: black;}
+            .nav-link{color: #ffffff;}
+            .nav-item:hover a{color: white; font-weight: lighter;}
+            #twitter, #linkedin, #facebook, #github, #email{color: black; text-decoration: none;}
+            .btn-primary{background-color: red; border-color: red;}
+            .btn:hover{background-color: white; color: red; border-color: red;}
+            .btn:active{background-color: red !important;  border-color: red; box-shadow: none !important;}
+            .btn:focus{background-color: red !important; color: white; border-color: red; box-shadow: none !important;}
+            @media only screen and (max-width: 768px) {
+                #about{background-image: url('img/bg-sm.png') !important; background-size: cover;}
+                #skills{height: auto !important;}
+            }
+        </style>
+        <script src="js/chart.min.js" type="text/javascript"></script>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+            $(document).on('click','.navbar-collapse', function(e)
+            {
+                if($(e.target).is('a'))
+                {
+                    $(this).collapse('hide');
+                }
+            });
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#navbar" data-offset="0">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-custom sticky-top">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="about" style="background-image: url('img/bg-lg.png'); background-size: cover; height: 100vh;">
+            <div class="container h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-1g-12 col-sm-12 my-auto">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <h1><span style="font-weight: bold; color: red;"><b>&lt;b&gt;</b></span><b>Hello</b><span style="font-weight: bold; color: red;"><b>&lt;/b&gt;</b></span></h1>
+                                <h1><b><span style="color: red;">I'm Aphiwe,</span> Full-Stack Web Developer</b></h1>
+                                <p>I reside at Pretoria, Soshanguve to be precise. I have a diverse set of skills - from design, development to database administration and quite experienced too; ranging from 3 years.
+                            </div>
+                            <div class="col-lg-6 my-auto">
+                                <a href="http://www.twitter.com/aphiwemagama" id="twitter"><i class="fab fa-twitter-square fa-2x" style="vertical-align: middle; color: #182628"></i> Twitter</a><br>
+                                <a href="http://www.linkedin.com/in/aphiwe-magama-1a730b125" id="linkedin"><i class="fab fa-linkedin fa-2x" style="vertical-align: middle; color: #182628"></i> LinkedIn</a><br>
+                                <a href="http://www.facebook.com/apmagama" id="facebook"><i class="fab fa-facebook-square fa-2x" style="vertical-align: middle; color: #182628"></i> Facebook</a><br>
+                                <a href="http://www.github.com/AphiweAM" id="github"><i class="fab fa-github-square fa-2x" style="vertical-align: middle; color: #182628"></i> Github</a><br>
+                                <a href="mailto:aphiwemagama@yahoo.com" id="email"><i class="fa fa-envelope-square fa-2x" style="vertical-align: middle; color: #182628"></i> Email</a><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" style="background-color: #f5f5f5; height: 100vh">
+            <div class="container h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-lg-6 col-sm-12 pt-5 my-auto">
+                        <h2>Skills & Expertise</h2>
+                        <p>The scope of my work is a large part of front-end including the back-end approach.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 my-auto">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myFirst"></canvas>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="myFourth"></canvas>
+                                    </div>
+                                    <div class="col-6">
+                                        <canvas id="myFifth"></canvas>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="mySixth"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="mySecond"></canvas>
+                                <div class="row">
+                                    <div class="col-6">
+                                        
+                                    </div>
+                                    <div class="col-6">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myThird"></canvas>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="myTwelveth"></canvas>
+                                    </div>
+                                    <div class="col-6">
+                                        <canvas id="myThirteenth"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-12">
+                                <canvas id="mySixteenth"></canvas>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                <canvas id="mySeventeenth"></canvas>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                <canvas id="myEighteenth"></canvas>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                <canvas id="myNineteenth"></canvas>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                <canvas id="myTwentieth"></canvas>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentySecond"></canvas>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentyThird"></canvas>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentyFourth"></canvas>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentyFifth"></canvas>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentySixth"></canvas>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <canvas id="myTwentySeventh"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" style="height: 100vh">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-lg-8 col-sm-12 my-auto d-flex justify-content-center">
+                        <img src="img/atonalrecords.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="col-lg-4 my-auto">
+                        <h4>Atonal Records</h4>
+                        <p>An internet label website that gives a brief description about the entity, intentions, artists and their catalog. One can stream and download the catalog for free.</p><p>The establishments forum incorporate the frontend, backend web application and an android mobile backend application.</p>
+                        <p><button type="button" class="btn btn-primary" onclick="window.open('http://atonalrecords.co.za','_blank')">Visit website</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/popper.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            var myFirst = document.getElementById('myFirst').getContext('2d');
+            
+            var firstChart = new Chart(myFirst, {
+                type: 'doughnut',
+                data: {
+                    labels: ['HTML5/CSS3',''],
+                    datasets:[{
+                        data: [
+                            90,
+                            10
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'HTML5/CSS3', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var mySecond = document.getElementById('mySecond').getContext('2d');
+            
+            var secondChart = new Chart(mySecond, {
+                type: 'doughnut',
+                data: {
+                    labels: ['JavaScript',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'JavaScript', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myThird = document.getElementById('myThird').getContext('2d');
+            
+            var thirdChart = new Chart(myThird, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            70,
+                            30
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'PHP', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myFourth = document.getElementById('myFourth').getContext('2d');
+            
+            var fourthChart = new Chart(myFourth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            70,
+                            30
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Bootstrap', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var myFifth = document.getElementById('myFifth').getContext('2d');
+            
+            var fifthChart = new Chart(myFifth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            90,
+                            10
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Materialize', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var mySixth = document.getElementById('mySixth').getContext('2d');
+            
+            var SixthChart = new Chart(mySixth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            90,
+                            10
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'SchematicUI', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var myTwelveth = document.getElementById('myTwelveth').getContext('2d');
+            
+            var TwelvethChart = new Chart(myTwelveth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            90,
+                            10
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'SQL', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var myThirteenth = document.getElementById('myThirteenth').getContext('2d');
+            
+            var ThirteenthChart = new Chart(myThirteenth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Laravel', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var mySixteenth = document.getElementById('mySixteenth').getContext('2d');
+            
+            var SixteenthChart = new Chart(mySixteenth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'C#', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var mySeventeenth = document.getElementById('mySeventeenth').getContext('2d');
+            
+            var SeventeenthChart = new Chart(mySeventeenth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'C++', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myEighteenth = document.getElementById('myEighteenth').getContext('2d');
+            
+            var EighteenthChart = new Chart(myEighteenth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Java SE', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myNineteenth = document.getElementById('myNineteenth').getContext('2d');
+            
+            var NineteenthChart = new Chart(myNineteenth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            65,
+                            35
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'ASP', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentieth = document.getElementById('myTwentieth').getContext('2d');
+            
+            var TwentiethChart = new Chart(myTwentieth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            60,
+                            40
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'ASP.NET', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentySecond = document.getElementById('myTwentySecond').getContext('2d');
+            
+            var TwentySecondChart = new Chart(myTwentySecond, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            70,
+                            30
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Git', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentyThird = document.getElementById('myTwentyThird').getContext('2d');
+            
+            var TwentyThirdChart = new Chart(myTwentyThird, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            95,
+                            5
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Slack', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentyFourth = document.getElementById('myTwentyFourth').getContext('2d');
+            
+            var TwentyFourthChart = new Chart(myTwentyFourth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            90,
+                            10
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Trello', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentyFifth = document.getElementById('myTwentyFifth').getContext('2d');
+            
+            var TwentyFifthChart = new Chart(myTwentyFifth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            75,
+                            25
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'UI/UX', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentySixth = document.getElementById('myTwentySixth').getContext('2d');
+            
+            var TwentySixthChart = new Chart(myTwentySixth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            80,
+                            20
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'SEO', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
+            var myTwentySeventh = document.getElementById('myTwentySeventh').getContext('2d');
+            
+            var TwentySeventhChart = new Chart(myTwentySeventh, {
+                type: 'doughnut',
+                data: {
+                    labels: ['PHP',''],
+                    datasets:[{
+                        data: [
+                            80,
+                            20
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', text: 'Wireframing', fontStyle: 'Roboto', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+        </script>
+    </body>
+</html>
