@@ -39,14 +39,11 @@ and open the template in the editor.
             .btn:hover{background-color: white; color: red; border-color: red;}
             .btn:active{background-color: red !important;  border-color: red; box-shadow: none !important;}
             .btn:focus{background-color: red !important; color: white; border-color: red; box-shadow: none !important;}
-            @media only screen and (max-width: 576px) {
+            @media only screen and (min-width: 360px) and (max-width: 640px) {
                 #about{background-image: url('img/bg-sm.png') !important; background-size: cover;}
                 #skills{height: auto !important;}
             }
-            @media only screen and (min-width: 576px) {
-                #skills{height: auto !important;}
-            }
-            @media only screen and (min-width: 992px)  {
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
                 #skills{height: auto !important;}
             }
         </style>
