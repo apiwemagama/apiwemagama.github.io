@@ -10,9 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link type="text/css" rel="stylesheet" href="css/fontawesome/css/fontawesome-all.min.css" />
+        <link type="text/css" rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css" />
         
         <!--SEO Metatags-->
         <meta name="description" content="I reside at Pretoria, Soshanguve to be precise. I have a diverse set of skills - from design, development to database administration and quite experienced too; ranging from 3 years." />
@@ -32,14 +32,22 @@ and open the template in the editor.
             html {scroll-behavior: smooth;}
             body{background-color: white; color: black; font-family: 'Roboto', serif;}
             .navbar-custom{background-color: black;}
-            .nav-link{color: #ffffff;}
-            .nav-item:hover a{color: white; font-weight: lighter;}
+            /*Custom defined navbar background and links color*/
+            .navbar-custom .nav-link{color: #ffffff;}
+            .navbar-custom .nav-item:hover a{}
+            /*Custom defined navbar toggler icon*/
+            .custom-toggler .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+            .custom-toggler.navbar-toggler {border: 0;}
             #twitter, #linkedin, #facebook, #github, #email{color: black; text-decoration: none;}
-            .btn-primary{background-color: red; border-color: red;}
-            .btn:hover{background-color: white; color: red; border-color: red;}
+            
+            #about{background-image: url('img/bg-lg.png'); background-size: cover; height: 100vh;}
+            
+            /*Custom bootstrap primary button*/
+            .btn-primary{background-color: red; border: 0;}
+            .btn:hover{background-color: rgba(246, 71, 71, 1); border: 0;}
             .btn:active{background-color: red !important;  border-color: red; box-shadow: none !important;}
-            .btn:focus{background-color: red !important; color: white; border-color: red; box-shadow: none !important;}
-            @media only screen and (min-width: 360px) and (max-width: 640px) {
+            .btn:focus{background-color: rgba(246, 71, 71, 1) !important; color: white; border: 0 !important; box-shadow: none !important;}
+            @media only screen and (max-width: 576px) {
                 #about{background-image: url('img/bg-sm.png') !important; background-size: cover;}
                 #skills{height: auto !important;}
             }
@@ -61,8 +69,8 @@ and open the template in the editor.
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="0">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30"></a>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo" height="30"></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -79,7 +87,7 @@ and open the template in the editor.
                 </ul>
             </div>
         </nav>
-        <div id="about" style="background-image: url('img/bg-lg.png'); background-size: cover; height: 100vh;">
+        <div id="about">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-1g-12 col-sm-12 my-auto">
@@ -211,8 +219,8 @@ and open the template in the editor.
             </div>
         </div>
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-        <script src="js/popper.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap/popper.js" type="text/javascript"></script>
+        <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script>
             var myFirst = document.getElementById('myFirst').getContext('2d');
             
@@ -233,7 +241,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'HTML5/CSS3', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'HTML5/CSS3', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -257,7 +265,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'JavaScript', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'JavaScript', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -281,7 +289,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'PHP', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'PHP', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -305,7 +313,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Bootstrap', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Bootstrap', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -331,7 +339,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Materialize', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Materialize', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -357,7 +365,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'SchematicUI', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'ScemanticUI', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -383,7 +391,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'SQL', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SQL', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -409,7 +417,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Laravel', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Laravel', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -435,7 +443,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'C#', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'C#', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -459,7 +467,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'C++', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'C++', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -483,7 +491,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Java SE', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Java SE', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -507,7 +515,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'ASP', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'ASP', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -531,7 +539,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'ASP.NET', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'ASP.NET', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -555,7 +563,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Git', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Git', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -579,7 +587,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Slack', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Slack', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -603,7 +611,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Trello', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Trello', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -627,7 +635,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'UI/UX', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'UI/UX', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -651,7 +659,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'SEO', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SEO', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -675,7 +683,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', text: 'Wireframing', fontStyle: 'Roboto', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Wireframing', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
