@@ -153,7 +153,7 @@ and open the template in the editor.
                                         <canvas id="myTwelveth"></canvas>
                                     </div>
                                     <div class="col-6">
-                                        <canvas id="myThirteenth"></canvas>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ and open the template in the editor.
                                 <canvas id="myTwentieth"></canvas>
                             </div>
                             <div class="col-lg-2 col-sm-12">
-                                
+                                <canvas id="myTwentyFirst"></canvas>
                             </div>
                         </div>
                         <div class="row">
@@ -299,7 +299,7 @@ and open the template in the editor.
             var fourthChart = new Chart(myFourth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Bootstrap',''],
                     datasets:[{
                         data: [
                             70,
@@ -325,7 +325,7 @@ and open the template in the editor.
             var fifthChart = new Chart(myFifth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Materialize',''],
                     datasets:[{
                         data: [
                             90,
@@ -351,7 +351,7 @@ and open the template in the editor.
             var SixthChart = new Chart(mySixth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['SemanticUI',''],
                     datasets:[{
                         data: [
                             90,
@@ -365,7 +365,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'ScemanticUI', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SemanticUI', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -377,33 +377,7 @@ and open the template in the editor.
             var TwelvethChart = new Chart(myTwelveth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
-                    datasets:[{
-                        data: [
-                            90,
-                            10
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SQL', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var myThirteenth = document.getElementById('myThirteenth').getContext('2d');
-            
-            var ThirteenthChart = new Chart(myThirteenth, {
-                type: 'doughnut',
-                data: {
-                    labels: ['PHP',''],
+                    labels: ['Laravel',''],
                     datasets:[{
                         data: [
                             50,
@@ -429,7 +403,7 @@ and open the template in the editor.
             var SixteenthChart = new Chart(mySixteenth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['C#',''],
                     datasets:[{
                         data: [
                             50,
@@ -453,7 +427,7 @@ and open the template in the editor.
             var SeventeenthChart = new Chart(mySeventeenth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['C++',''],
                     datasets:[{
                         data: [
                             50,
@@ -477,11 +451,11 @@ and open the template in the editor.
             var EighteenthChart = new Chart(myEighteenth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['SQL',''],
                     datasets:[{
                         data: [
-                            50,
-                            50
+                            80,
+                            20
                         ],
                         backgroundColor:["#182628"],
                         borderWidth:0
@@ -491,7 +465,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Java SE', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SQL', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
                 }
             });
@@ -501,7 +475,7 @@ and open the template in the editor.
             var NineteenthChart = new Chart(myNineteenth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['ASP',''],
                     datasets:[{
                         data: [
                             65,
@@ -525,7 +499,7 @@ and open the template in the editor.
             var TwentiethChart = new Chart(myTwentieth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['ASP.NET',''],
                     datasets:[{
                         data: [
                             60,
@@ -544,12 +518,36 @@ and open the template in the editor.
                 }
             });
             
+            var myTwentyFirst = document.getElementById('myTwentyFirst').getContext('2d');
+            
+            var TwentiethChart = new Chart(myTwentyFirst, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Java SE',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Java SE', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    aspectRatio: 1
+                }
+            });
+            
             var myTwentySecond = document.getElementById('myTwentySecond').getContext('2d');
             
             var TwentySecondChart = new Chart(myTwentySecond, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Git',''],
                     datasets:[{
                         data: [
                             70,
@@ -573,7 +571,7 @@ and open the template in the editor.
             var TwentyThirdChart = new Chart(myTwentyThird, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Slack',''],
                     datasets:[{
                         data: [
                             95,
@@ -597,7 +595,7 @@ and open the template in the editor.
             var TwentyFourthChart = new Chart(myTwentyFourth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Trello',''],
                     datasets:[{
                         data: [
                             90,
@@ -621,7 +619,7 @@ and open the template in the editor.
             var TwentyFifthChart = new Chart(myTwentyFifth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['UI/UX',''],
                     datasets:[{
                         data: [
                             75,
@@ -645,7 +643,7 @@ and open the template in the editor.
             var TwentySixthChart = new Chart(myTwentySixth, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['SEO',''],
                     datasets:[{
                         data: [
                             80,
@@ -669,7 +667,7 @@ and open the template in the editor.
             var TwentySeventhChart = new Chart(myTwentySeventh, {
                 type: 'doughnut',
                 data: {
-                    labels: ['PHP',''],
+                    labels: ['Wireframing',''],
                     datasets:[{
                         data: [
                             80,
