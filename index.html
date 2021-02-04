@@ -113,6 +113,14 @@ and open the template in the editor.
                                 <canvas id="mySecond"></canvas>
                                 <div class="row">
                                     <div class="col-6">
+                                        <canvas id="mySeventh"></canvas>
+                                    </div>
+                                    <div class="col-6">
+                                        <canvas id="myEighth"></canvas>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
                                         
                                     </div>
                                     <div class="col-6">
@@ -393,6 +401,58 @@ and open the template in the editor.
                     tooltips: {enabled: false},
                     title: {display: true, position: 'bottom', lineHeight: '2', text: 'C#', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1
+                }
+            });
+            
+            var mySeventh = document.getElementById('mySeventh').getContext('2d');
+            
+            var SevethChart = new Chart(mySeventh, {
+                type: 'doughnut',
+                data: {
+                    labels: ['AngularJS',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'AngularJS', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
+                }
+            });
+            
+            var myEighth = document.getElementById('myEighth').getContext('2d');
+            
+            var EighthChart = new Chart(myEighth, {
+                type: 'doughnut',
+                data: {
+                    labels: ['AJAX',''],
+                    datasets:[{
+                        data: [
+                            50,
+                            50
+                        ],
+                        backgroundColor:["#182628"],
+                        borderWidth:0
+                    }]
+                },
+                options:{
+                    cutoutPercentage: 80,
+                    legend: {display: false},
+                    tooltips: {enabled: false},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'AJAX', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    aspectRatio: 1,
+                    circumference: 3,
+                    rotation: -0.98 * Math.PI
                 }
             });
             
