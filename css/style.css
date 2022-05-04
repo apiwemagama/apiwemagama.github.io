@@ -9,9 +9,22 @@ and open the template in the editor.
 */
 
 html {scroll-behavior: smooth;}
-body{background-color: white; color: black; font-family: 'Roboto', serif;}
-.navbar-custom{background-color: black;}
+body{background-color: white; }
+/*Custom defined font*/
+@font-face{
+	font-family: "SEGOE UI";
+	font-style: normal;
+    font-weight: normal;
+	src: url("../fonts/font-face/segoeui.ttf");
+}
+@font-face{
+	font-family: "SEGOE UI";
+	font-style: normal;
+    font-weight: bold;
+	src: url("../fonts/font-face/segoeuib.ttf");
+}
 /*Custom defined navbar background and links color*/
+.navbar-custom{background-color: black;}
 .navbar-custom .nav-link{color: #ffffff;}
 .navbar-custom .nav-item:hover a{}
 /*Custom defined navbar toggler icon*/
