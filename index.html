@@ -68,7 +68,7 @@ and open the template in the editor.
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
                                 <h1><span class="text-red font-weight-bold"><b>&lt;b&gt;</b></span><b>Hello</b><span class="text-red font-weight-bold"><b>&lt;/b&gt;</b></span></h1>
-                                <h1><b><span class="text-red">I'm Aphiwe,</span> Full-Stack Web Developer</b></h1>
+                                <h1><b><span class="text-red">I'm Aphiwe,</span> a Full-Stack (LAMP) Web Developer</b></h1>
                                 <p>I reside at Pretoria, Soshanguve to be precise. I have a diverse set of skills - from design, development to database administration and quite experienced too; ranging from 3 years.
                             </div>
                             <div class="col-lg-6 my-auto">
@@ -204,7 +204,9 @@ and open the template in the editor.
         <script src="js/bootstrap/popper.js" type="text/javascript"></script>
         <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script>
+		Chart.defaults.global.defaultFontColor = 'red';
             var myFirst = document.getElementById('myFirst').getContext('2d');
+			
             
             var firstChart = new Chart(myFirst, {
                 type: 'doughnut',
