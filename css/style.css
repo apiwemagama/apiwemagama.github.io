@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 html {scroll-behavior: smooth;}
-body{background-color: white; }
+body{background-color: white;}
 /*Custom defined font*/
 @font-face{
 	font-family: "SEGOE UI";
