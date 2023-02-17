@@ -73,8 +73,8 @@ and open the template in the editor.
                             </div>
                             <div class="col-lg-6 my-auto">
                                 <a href="http://www.twitter.com/aphiwemagama" id="twitter"><i class="fab fa-twitter-square fa-2x align-middle"></i> Twitter</a><br>
-                                <a href="http://www.linkedin.com/in/aphiwe-magama-1a730b125" id="linkedin"><i class="fab fa-linkedin fa-2x align-middle"></i> LinkedIn</a><br>
-                                <a href="http://www.facebook.com/apmagama" id="facebook"><i class="fab fa-facebook-square fa-2x align-middle"></i> Facebook</a><br>
+                                <a href="http://www.linkedin.com/in/aphiwe-magama" id="linkedin"><i class="fab fa-linkedin fa-2x align-middle"></i> LinkedIn</a><br>
+                                <a href="http://www.facebook.com/apaphiwemagama" id="facebook"><i class="fab fa-facebook-square fa-2x align-middle"></i> Facebook</a><br>
                                 <a href="http://www.github.com/aphiwemagama" id="github"><i class="fab fa-github-square fa-2x align-middle"></i> Github</a><br>
                                 <a href="tel:+27715599185" class="t-style-none"><i class="fas fa-phone-square fa-2x align-middle"></i> +27715599185</a><br>
                                 <a href="mailto:aphiwemagama@yahoo.com" id="email"><i class="fa fa-envelope-square fa-2x align-middle"></i> Email</a>
@@ -113,7 +113,7 @@ and open the template in the editor.
                                 <canvas id="JavaScript"></canvas>
                                 <div class="row">
                                     <div class="col-6">
-                                        <canvas id="AngularJS"></canvas>
+                                        <canvas id="Angular"></canvas>
                                     </div>
                                     
                                 </div>
@@ -189,7 +189,7 @@ and open the template in the editor.
                             </div>
                         </div>
 						
-						<div class="row">
+						<!--<div class="row">
                             <div class="col-lg-3 col-sm-12">
                                 <canvas id="Slack"></canvas>
                             </div>
@@ -202,7 +202,7 @@ and open the template in the editor.
 							<div class="col-lg-3 col-sm-12">
                                 <canvas id="Teams"></canvas>
                             </div>
-                        </div>
+                        </div>-->
 						
                         <div class="row">
                             <div class="col-lg-4 col-sm-12">
@@ -550,12 +550,12 @@ and open the template in the editor.
                 }
             });
             
-            var AngularJS = document.getElementById('AngularJS').getContext('2d');
+            var Angular = document.getElementById('Angular').getContext('2d');
             
-            new Chart(AngularJS, {
+            new Chart(Angular, {
                 type: 'doughnut',
                 data: {
-                    labels: ['AngularJS',''],
+                    labels: ['Angular',''],
                     datasets:[{
                         data: [
                             75,
@@ -569,7 +569,7 @@ and open the template in the editor.
                     cutoutPercentage: 80,
                     legend: {display: false},
                     tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'AngularJS', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
+                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Angular', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
                     aspectRatio: 1,
                     circumference: 3,
                     rotation: -0.98 * Math.PI
@@ -696,7 +696,7 @@ and open the template in the editor.
                 }
             });
             
-            var Slack = document.getElementById('Slack').getContext('2d');
+            /**var Slack = document.getElementById('Slack').getContext('2d');
             
             new Chart(Slack, {
                 type: 'doughnut',
@@ -790,7 +790,7 @@ and open the template in the editor.
                     title: {display: true, position: 'bottom', lineHeight: '2', text: 'Microsoft Teams', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
                     aspectRatio: 1
                 }
-            });
+            });**/
 			
             var UI = document.getElementById('UI').getContext('2d');
             
