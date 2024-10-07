@@ -6,31 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Aphiwe Magama | Full-Stack Web Developer</title>
+        <title>Aphiwe Magama | Full Stack Engineer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link type="text/css" rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         
         <!--SEO Metatags-->
-        <meta name="description" content="Extremely motivated, organized and curious web development specialist. Have a background in web design, development and database administration. Over 4+ years of Full Stack web development experience and a firm believer in the mobile-first approach." />
-        <meta name="keywords" content="Aphiwe Magama, Web Designer, Web Developer, SEO Engineer, Content Developer, Logo Design, Mobile App Developer, Freelance Web Developer" />
+        <meta name="description" content="Extremely motivated, organized and curious Full Stack engineer. Have a background in web design and development, database administration and API design. Over 4+ years of Full Stack web development experience and a firm believer in the mobile-first approach." />
+        <meta name="keywords" content="Aphiwe Magama, Apiwe Magama, Web Designer, Web Developer, Database administration, Logo design, Poster design, Desktop Application developer, Web Application developer, Mobile Application developer" />
         
         <!--Facebook Share Metatags-->
         <meta property="fb:app_id" content="453891951818018" />
-        <meta property="og:title" content="Aphiwe Magama | Full-Stack Web Developer" />
+        <meta property="og:title" content="Aphiwe Magama | Full Stack Engineer" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://aphiwemagama.co.za/img/facebook.png" />
+        <meta property="og:image" content="img/facebook.png" />
         <meta property="og:url" content="https://aphiwemagama.github.io" />
-        <meta property="og:description" content="Extremely motivated, organized and curious web development specialist. Have a background in web design, development and database administration. Over 4+ years of Full Stack web development experience and a firm believer in the mobile-first approach." />
+        <meta property="og:description" content="Extremely motivated, organized and curious Full Stack engineer. Have a background in web design and development, database administration and API design. Over 4+ years of Full Stack web development experience and a firm believer in the mobile-first approach." />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         
-        <script src="js/chart.min.js" type="text/javascript"></script>
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
             $(document).on('click','.navbar-collapse', function(e)
             {
@@ -41,197 +44,137 @@ and open the template in the editor.
             });
         </script>
     </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="0">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo" height="30"></a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">SKILLS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">PROJECTS</a>
-                    </li>
-                </ul>
+    <body data-spy="scroll" data-target="#navbar" data-offset="0" class="bg-darkgunmetal">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-charleston-green fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/logo-white.png" alt="Logo" height="70"></a>
+                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="custom-toggler navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div id="about">
+        <div id="home" class="vh-100 bg-charleston-green">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-1g-12 col-sm-12 my-auto">
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
-                                <h1><span class="text-red font-weight-bold"><b>&lt;b&gt;</b></span><b>Hello</b><span class="text-red font-weight-bold"><b>&lt;/b&gt;</b></span></h1>
-                                <h1><b><span class="text-red">I'm Aphiwe,</span> a Full-Stack Web Developer</b></h1>
-                                <p>Result oriented web developer, with 5 years of experiencecovering frontend, backend and database administration including API development. A fast and eager learner; I adopt to changing project requirements quickly to meet business requirements. And I am a firm believer in the mobile-first approach.</p>
+                                <div>Hello, I am <br><h1 class="name fw-bold">APHIWE MAGAMA</h1></div>
                             </div>
-                            <div class="col-lg-6 my-auto">
-                                <a href="http://www.twitter.com/aphiwemagama" id="twitter"><i class="fab fa-twitter-square fa-2x align-middle"></i> Twitter</a><br>
-                                <a href="http://www.linkedin.com/in/aphiwe-magama" id="linkedin"><i class="fab fa-linkedin fa-2x align-middle"></i> LinkedIn</a><br>
-                                <a href="http://www.facebook.com/apaphiwemagama" id="facebook"><i class="fab fa-facebook-square fa-2x align-middle"></i> Facebook</a><br>
-                                <a href="http://www.github.com/aphiwemagama" id="github"><i class="fab fa-github-square fa-2x align-middle"></i> Github</a><br>
-                                <a href="tel:+27715599185" class="t-style-none"><i class="fas fa-phone-square fa-2x align-middle"></i> +27715599185</a><br>
-                                <a href="mailto:aphiwemagama@yahoo.com" id="email"><i class="fa fa-envelope-square fa-2x align-middle"></i> Email</a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Full Stack Engineer</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="skills" class="bg-light d-vh-100">
+        <div class="vh-30 bg-darkgunmetal">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
-                    <div class="col-lg-6 col-sm-12 pt-5 my-auto">
-                        <h2>Skills & Expertise</h2>
-                        <p>The scope of my work is a large part of front-end including the back-end approach.</p>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 my-auto mx-auto text-center">
+                        <figure><h1>5+</h1></figure>
+                        <p>Years of</br>Experience</p>
                     </div>
-                    <div class="col-lg-6 col-sm-12 my-auto">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 my-auto mx-auto text-center">
+                        <figure><h1>1+</h1></figure>
+                        <p>Clients</br>on work</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 my-auto mx-auto text-center">
+                        <figure><h1>6+</h1></figure>
+                        <p>Projects</br>completed</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="vh-100 bg-charleston-green">
+            <div class="container h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-lg-6 col-12 my-auto">
+                    </div>
+                    <div class="col-lg-6 col-12 my-auto">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="HTML"></canvas>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="Bootstrap"></canvas>
-                                    </div>
-                                    <div class="col-6">
-                                        <canvas id="Materialize"></canvas>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="SemanticUI"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="JavaScript"></canvas>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="Angular"></canvas>
-                                    </div>
-                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        
-                                    </div>
-                                    <div class="col-6">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="PHP"></canvas>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="Laravel"></canvas>
-                                    </div>
-                                    <div class="col-6">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="ASP"></canvas>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="NET"></canvas>
-                                    </div>
-					
-                                </div>
-                                
-                            </div>
-							<div class="col-lg-4 col-sm-12">
-                                <canvas id="Python"></canvas>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <canvas id="Django"></canvas>
-                                    </div>
-					
-                                </div>
-                                
-                            </div>
-                        </div>
-						
-                        <div class="row">
-                            <div class="col-lg-2 col-sm-12">
-                                <canvas id="C-Sharp"></canvas>
-                            </div>
-                            <div class="col-lg-2 col-sm-12">
-                                <canvas id="C++"></canvas>
-                            </div>
-                            <div class="col-lg-2 col-sm-12">
-                                <canvas id="JavaSE"></canvas>
-                            </div>
-                            <div class="col-lg-2 col-sm-12">
-                                <canvas id="SQL"></canvas>
-                            </div>
-                        </div>
-						
-						<div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="REST"></canvas>
-                            </div>
-                        </div>
-						
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="Git"></canvas>
-                            </div>
-                        </div>
-						
-						<!--<div class="row">
-                            <div class="col-lg-3 col-sm-12">
-                                <canvas id="Slack"></canvas>
-                            </div>
-                            <div class="col-lg-3 col-sm-12">
-                                <canvas id="Trello"></canvas>
-                            </div>
-                            <div class="col-lg-3 col-sm-12">
-                                <canvas id="Zoom"></canvas>
-                            </div>
-							<div class="col-lg-3 col-sm-12">
-                                <canvas id="Teams"></canvas>
-                            </div>
-                        </div>-->
-						
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="UI"></canvas>
-                            </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="SEO"></canvas>
-                            </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="Wireframing"></canvas>
-                            </div>
-                        </div>
-						
-						<div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="A+"></canvas>
-                            </div>
-                        </div>
-						
-						<div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <canvas id="N+"></canvas>
+                            <div class="col-lg-12 col-12">
+                                <h3>About</h3>
+                                <p>Result oriented web developer, with 5 years of experience covering frontend, backend and database administration including API development. A fast and eager learner; I adopt to changing project requirements quickly to meet business requirements. And I am a firm believer in the mobile-first approach.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="projects" class="d-vh-100">
+        <div id="skills" class="vh-100 bg-darkgunmetal pt-5 pb-5">
+            <div class="container h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-lg-12 col-sm-6 my-auto">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <div class="card bg-gunmetal">
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                    <div class="card-footer border-0 bg-gunmetal text-white">
+                                        <p>Front-End</br>Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                    <div class="card-footer border-0">
+                                        <p>Back-End<br>Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <div class="card bg-gunmetal">
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                    <div class="card-footer border-0 bg-gunmetal text-white">
+                                        <p>Database<br>Administration</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <div class="card bg-gunmetal">
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                    <div class="card-footer border-0 bg-gunmetal text-white">
+                                        <p>API<br>Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="vh-100 bg-gunmetal">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-lg-8 col-sm-12 my-auto d-flex justify-content-center">
@@ -240,677 +183,73 @@ and open the template in the editor.
                     <div class="col-lg-4 my-auto">
                         <h4>Atonal Records</h4>
                         <p>A website that gives a brief description about the imprint itself. It incorporates an e-commerce store where one can stream and buy the entities catalog.</p>
-                        <p><button type="button" class="btn btn-primary" onclick="window.open('https://atonalrecords.co.za','_blank')">Visit Website</button></p>
+                        <p><button type="button" class="btn btn-moonstone text-white" onclick="window.open('https://atonalrecords.co.za','_blank')">Visit Website</button></p>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap/popper.js" type="text/javascript"></script>
-        <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-        <script>
-			var HTML = document.getElementById('HTML').getContext('2d');
-			
-            new Chart(HTML, {
-                type: 'doughnut',
-                data: {
-                    labels: ['HTML5/CSS3',''],
-                    datasets:[{
-                        data: [
-                            90,
-                            10
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'HTML5/CSS3', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            
-            var JavaScript = document.getElementById('JavaScript').getContext('2d');
-            
-            new Chart(JavaScript, {
-                type: 'doughnut',
-                data: {
-                    labels: ['JavaScript',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'JavaScript', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var PHP = document.getElementById('PHP').getContext('2d');
-            
-            new Chart(PHP, {
-                type: 'doughnut',
-                data: {
-                    labels: ['PHP',''],
-                    datasets:[{
-                        data: [
-                            70,
-                            30
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'PHP', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-            var Bootstrap = document.getElementById('Bootstrap').getContext('2d');
-            
-            new Chart(Bootstrap, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Bootstrap',''],
-                    datasets:[{
-                        data: [
-                            70,
-                            30
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Bootstrap', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var Materialize = document.getElementById('Materialize').getContext('2d');
-            
-            new Chart(Materialize, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Materialize',''],
-                    datasets:[{
-                        data: [
-                            90,
-                            10
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Materialize', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var SemanticUI = document.getElementById('SemanticUI').getContext('2d');
-            
-            new Chart(SemanticUI, {
-                type: 'doughnut',
-                data: {
-                    labels: ['SemanticUI',''],
-                    datasets:[{
-                        data: [
-                            90,
-                            10
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SemanticUI', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var Laravel = document.getElementById('Laravel').getContext('2d');
-            
-            new Chart(Laravel, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Laravel',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Laravel', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-			
-			var ASP = document.getElementById('ASP').getContext('2d');
-			
-            new Chart(ASP, {
-                type: 'doughnut',
-                data: {
-                    labels: ['ASP',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'ASP', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var NET = document.getElementById('NET').getContext('2d');
-            
-            new Chart(NET, {
-                type: 'doughnut',
-                data: {
-                    labels: ['.NET',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: '.NET', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-			
-			var Python = document.getElementById('Python').getContext('2d');
-			
-            new Chart(Python, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Python',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Python', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var Django = document.getElementById('Django').getContext('2d');
-            
-            new Chart(Django, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Django',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Django', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var CSharp = document.getElementById('C-Sharp').getContext('2d');
-            
-            new Chart(CSharp, {
-                type: 'doughnut',
-                data: {
-                    labels: ['C#',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'C#', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var Angular = document.getElementById('Angular').getContext('2d');
-            
-            new Chart(Angular, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Angular',''],
-                    datasets:[{
-                        data: [
-                            75,
-                            25
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Angular', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1,
-                    circumference: 3,
-                    rotation: -0.98 * Math.PI
-                }
-            });
-            
-            var CPlusplus = document.getElementById('C++').getContext('2d');
-            
-            new Chart(CPlusplus, {
-                type: 'doughnut',
-                data: {
-                    labels: ['C++',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'C++', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var JavaSE = document.getElementById('JavaSE').getContext('2d');
-            
-            new Chart(JavaSE, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Java SE',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Java SE', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var SQL = document.getElementById('SQL').getContext('2d');
-            
-            new Chart(SQL, {
-                type: 'doughnut',
-                data: {
-                    labels: ['ASP',''],
-                    datasets:[{
-                        data: [
-                            65,
-                            35
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SQL', fontFamily: 'Roboto', fontSize: '14', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var REST = document.getElementById('REST').getContext('2d');
-            
-            new Chart(REST, {
-                type: 'doughnut',
-                data: {
-                    labels: ['REST/RESTful',''],
-                    datasets:[{
-                        data: [
-                            70,
-                            30
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'REST/RESTful', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var Git = document.getElementById('Git').getContext('2d');
-            
-            new Chart(Git, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Git',''],
-                    datasets:[{
-                        data: [
-                            60,
-                            40
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Git', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            /**var Slack = document.getElementById('Slack').getContext('2d');
-            
-            new Chart(Slack, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Slack',''],
-                    datasets:[{
-                        data: [
-                            70,
-                            30
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Slack', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-			var Trello = document.getElementById('Trello').getContext('2d');
-            
-            new Chart(Trello, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Trello',''],
-                    datasets:[{
-                        data: [
-                            75,
-                            25
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Trello', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var ZOOM = document.getElementById('Zoom').getContext('2d');
-            
-            new Chart(ZOOM, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Zoom',''],
-                    datasets:[{
-                        data: [
-                            80,
-                            20
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Zoom', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var Teams = document.getElementById('Teams').getContext('2d');
-            
-            new Chart(Teams, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Microsoft Teams',''],
-                    datasets:[{
-                        data: [
-                            80,
-                            20
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Microsoft Teams', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });**/
-			
-            var UI = document.getElementById('UI').getContext('2d');
-            
-            new Chart(UI, {
-                type: 'doughnut',
-                data: {
-                    labels: ['UI/UX',''],
-                    datasets:[{
-                        data: [
-                            75,
-                            25
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'UI/UX', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            
-            var SEO = document.getElementById('SEO').getContext('2d');
-            
-            new Chart(SEO, {
-                type: 'doughnut',
-                data: {
-                    labels: ['SEO',''],
-                    datasets:[{
-                        data: [
-                            80,
-                            20
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'SEO', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-            //Wireframing chart data
-            var Wireframing = document.getElementById('Wireframing').getContext('2d');
-
-            new Chart(Wireframing, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Wireframing',''],
-                    datasets:[{
-                        data: [
-                            80,
-                            20
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'Wireframing', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var A = document.getElementById('A+').getContext('2d');
-
-            new Chart(A, {
-                type: 'doughnut',
-                data: {
-                    labels: ['A+',''],
-                    datasets:[{
-                        data: [
-                            80,
-                            20
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'A+', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-			
-			var N = document.getElementById('N+').getContext('2d');
-
-            new Chart(N, {
-                type: 'doughnut',
-                data: {
-                    labels: ['N+',''],
-                    datasets:[{
-                        data: [
-                            50,
-                            50
-                        ],
-                        backgroundColor:["#182628"],
-                        borderWidth:0
-                    }]
-                },
-                options:{
-                    cutoutPercentage: 80,
-                    legend: {display: false},
-                    tooltips: {enabled: false},
-                    title: {display: true, position: 'bottom', lineHeight: '2', text: 'N+', fontFamily: 'Roboto', fontSize: '18', fontColor: 'black'},
-                    aspectRatio: 1
-                }
-            });
-        </script>
+        <div id="contact" class="vh-100 bg-darkgunmetal">
+            <div class="container h-100 pt-5">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-lg-6 col-12 my-auto pb-5">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <h4 class="fw-bold">Connect</h4>
+                                <h6 class="fw-bold">Phone</h6>
+                                <p>Call on Mon - Sun from 7am to 9pm</p>
+                                <p><a href="+27715599185">+27715599185</a></p>
+                                <h6 class="fw-bold">Location</h6>
+                                <p>Our workplace</p>
+                                <p>844 Moremogolo Street Block M</br>Soshanguve</br>0152</p>
+                                <h6 class="fw-bold">Chat</h6>
+                                <a href="http://wa.me/0715599185" id="whatsapp" target="_blank"><i class="fab fa-whatsapp fa-2x align-middle"></i></a>
+                                <a href="http://www.twitter.com/aphiwemagama" id="twitter" target="_blank" ><i class="fab fa-twitter fa-2x align-middle"></i></a>
+                                <a href="http://www.linkedin.com/in/aphiwe-magama" id="linkedin" target="_blank" ><i class="fab fa-linkedin fa-2x align-middle"></i></a>
+                                <a href="https://www.youtube.com/channel/UCs14rR-BU2S4Vr4dnmM7PyA" id="youtube" target="_blank" ><i class="fa-brands fa-youtube fa-2x align-middle"></i></a>
+                                <a href="http://www.github.com/aphiwemagama" id="github" target="_blank" ><i class="fab fa-github fa-2x align-middle"></i></a>
+                                <a href="http://www.facebook.com/apmagama" id="facebook" target="_blank" ><i class="fab fa-facebook-square fa-2x align-middle"></i></a>
+                                <a href="https://stackoverflow.com/users/11426550/aphiwe" id="stackoverflow" target="_blank" ><i class="fa-brands fa-stack-overflow fa-2x align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-auto pb-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="firstname" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="mesage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3"placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-moonstone text-white">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <footer>
+            <p class="text-center">&copy; 2022 McGama Corporation</p>
+        </footer> -->
     </body>
 </html>
