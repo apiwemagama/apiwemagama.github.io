@@ -40,11 +40,3 @@ p a {color: white; text-decoration: none;}
     #contact{height: auto !important;}
     .fs-7 {font-size: 0.9rem !important;}
 }
-@media only screen and (max-width: 768px) {
-    .name{font-size: 300% !important;}
-    #contact{height: auto !important;}
-    
-}
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-    /* #skills{height: auto !important; padding: 100px 0 100px 0;} */
-}
