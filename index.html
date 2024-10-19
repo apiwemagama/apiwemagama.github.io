@@ -194,7 +194,7 @@ and open the template in the editor.
         <div id="contact" class="section vh-100 bg-darkgunmetal">
             <div class="container h-100 pt-5">
                 <div class="row h-100 d-flex justify-content-center">
-                    <div class="col-lg-6 col-12 my-auto pb-5">
+                    <div class="section col-lg-6 col-12 my-auto pb-5">
                         <div class="row">
                             <div class="col-lg-12 col-sm-12">
                                 <h4 class="fw-bold">Connect</h4>
@@ -215,7 +215,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 my-auto pb-5">
+                    <div class="section col-lg-6 my-auto pb-5">
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
@@ -274,11 +274,26 @@ and open the template in the editor.
                 sections[nextSectionIndex].scrollIntoView({ behavior: 'smooth' });
             }
 
-            // Mouse Wheel Navigation
+            // Mouse Wheel and Touchpad Navigation
             container.addEventListener('wheel', (event) => {
                 event.preventDefault();
                 const direction = event.deltaY > 0 ? 1 : -1;
                 scrollToSection(direction);
+            });
+
+            // Touchpad Gesture Navigation
+            container.addEventListener('touchstart', (event) => {
+                const startY = event.touches[0].clientY;
+
+                container.addEventListener('touchmove', (event) => {
+                    const deltaY = startY - event.touches[0].clientY;
+
+                    if (Math.abs(deltaY) > 30) { // Threshold to prevent accidental scrolls
+                        event.preventDefault();
+                        scrollToSection(deltaY > 0 ? 1 : -1);
+                        container.removeEventListener('touchmove', arguments.callee); // Remove listener after use
+                    }
+                }, { passive: false });
             });
 
             // Arrow Key Navigation
