@@ -263,46 +263,17 @@ and open the template in the editor.
         <script>
             const container = document.querySelector('.cont');
 
-            function scrollToSection(direction) {
-                const sections = document.querySelectorAll('.section');
-                const currentSectionIndex = [...sections].findIndex(section => {
-                    return section.getBoundingClientRect().top >= 0;
-                });
-
-                const nextSectionIndex = Math.min(Math.max(currentSectionIndex + direction, 0), sections.length - 1);
-
-                sections[nextSectionIndex].scrollIntoView({ behavior: 'smooth' });
-            }
-
-            // Mouse Wheel and Touchpad Navigation
             container.addEventListener('wheel', (event) => {
                 event.preventDefault();
                 const direction = event.deltaY > 0 ? 1 : -1;
-                scrollToSection(direction);
-            });
 
-            // Touchpad Gesture Navigation
-            container.addEventListener('touchstart', (event) => {
-                const startY = event.touches[0].clientY;
+                const currentSection = [...document.querySelectorAll('.section')].findIndex(section => {
+                    return section.getBoundingClientRect().top >= 0;
+                });
 
-                container.addEventListener('touchmove', (event) => {
-                    const deltaY = startY - event.touches[0].clientY;
+                const nextSection = Math.min(Math.max(currentSection + direction, 0), document.querySelectorAll('.section').length - 1);
 
-                    if (Math.abs(deltaY) > 30) { // Threshold to prevent accidental scrolls
-                        event.preventDefault();
-                        scrollToSection(deltaY > 0 ? 1 : -1);
-                        container.removeEventListener('touchmove', arguments.callee); // Remove listener after use
-                    }
-                }, { passive: false });
-            });
-
-            // Arrow Key Navigation
-            window.addEventListener('keydown', (event) => {
-                if (event.key === 'ArrowDown') {
-                    scrollToSection(1); // Scroll down
-                } else if (event.key === 'ArrowUp') {
-                    scrollToSection(-1); // Scroll up
-                }
+                document.querySelectorAll('.section')[nextSection].scrollIntoView({ behavior: 'smooth' });
             });
         </script>
     </body>
