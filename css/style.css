@@ -35,6 +35,32 @@ a .fa-brands{color: white; text-decoration: none;}
 
 p a {color: white; text-decoration: none;}
 
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent default scrolling */
+}
+
+.cont {
+    height: 100vh; /* Full viewport height for the container */
+    overflow-y: scroll; /* Enable scrolling on the container */
+    scroll-snap-type: y mandatory; /* Enable vertical snap */
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.cont::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    scroll-snap-align: start; /* Align sections at the start */
+}
+
 @media only screen and (max-width: 576px) {
     .name{font-size: 300% !important;}
     #contact{height: auto !important;}
