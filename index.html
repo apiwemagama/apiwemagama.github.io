@@ -72,8 +72,7 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <div class="cont">
-        <div id="home" class="section vh-100 bg-charleston-green">
+        <div id="home" class="vh-100 bg-charleston-green">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-1g-12 col-sm-12 my-auto">
@@ -109,7 +108,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="about" class="section vh-100 bg-charleston-green">
+        <div id="about" class="vh-100 bg-charleston-green">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-lg-6 col-12 my-auto">
@@ -125,7 +124,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="skills" class="section vh-100 bg-darkgunmetal">
+        <div id="skills" class="vh-100 bg-darkgunmetal">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-lg-12 col-sm-6 my-auto">
@@ -177,7 +176,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="projects" class="section vh-100 bg-gunmetal">
+        <div id="projects" class="vh-100 bg-gunmetal">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-lg-8 col-sm-12 my-auto d-flex justify-content-center">
@@ -191,7 +190,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="contact" class="section vh-100 bg-darkgunmetal">
+        <div id="contact" class="vh-100 bg-darkgunmetal">
             <div class="container h-100 pt-5">
                 <div class="row h-100 d-flex justify-content-center">
                     <div class="col-lg-6 col-12 my-auto pb-5">
@@ -256,25 +255,8 @@ and open the template in the editor.
                 <p>&copy; <span id="currentYear"></span> McGama Corporation. All rights reserved.</p>
             </div>
         </footer>
-            </div>
         <script>
             document.getElementById('currentYear').textContent = new Date().getFullYear();
-        </script>
-        <script>
-            const container = document.querySelector('.cont');
-
-            container.addEventListener('wheel', (event) => {
-                event.preventDefault();
-                const direction = event.deltaY > 0 ? 1 : -1;
-
-                const currentSection = [...document.querySelectorAll('.section')].findIndex(section => {
-                    return section.getBoundingClientRect().top >= 0;
-                });
-
-                const nextSection = Math.min(Math.max(currentSection + direction, 0), document.querySelectorAll('.section').length - 1);
-
-                document.querySelectorAll('.section')[nextSection].scrollIntoView({ behavior: 'smooth' });
-            });
         </script>
     </body>
 </html>
