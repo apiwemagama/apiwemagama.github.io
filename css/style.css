@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Aphiwe
 */
 
-html {scroll-behavior: smooth;}
+
 body{color: white; font-family: 'Inter', sans-serif;}
 
 .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
@@ -35,30 +35,30 @@ a .fa-brands{color: white; text-decoration: none;}
 
 p a {color: white; text-decoration: none;}
 
-body {
+html, body {
+    height: 100%; /* Ensure full height */
     margin: 0;
     overflow: hidden; /* Prevent default scrolling */
 }
 
 .cont {
-    height: 100vh; /* Full viewport height for the container */
-    overflow-y: scroll; /* Enable scrolling on the container */
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
     scroll-snap-type: y mandatory; /* Enable vertical snap */
-    -ms-overflow-style: none;  /* Internet Explorer and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
 .cont::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    display: none; /* Hide scrollbar in Chrome, Safari, Opera */
 }
 
 .section {
-    height: 100vh; /* Full viewport height */
+    height: 100vh; /* Full viewport height for each section */
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    scroll-snap-align: start; /* Align sections at the start */
+    scroll-snap-align: start; /* Snap alignment */
 }
 
 @media only screen and (max-width: 576px) {
