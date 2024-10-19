@@ -38,7 +38,6 @@ p a {color: white; text-decoration: none;}
 @media only screen and (max-width: 576px) {
     .name{font-size: 300% !important;}
     #contact{height: auto !important;}
-    .fs-7 {font-size: 1rem !important;}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     /* #skills{height: auto !important; padding: 100px 0 100px 0;} */
