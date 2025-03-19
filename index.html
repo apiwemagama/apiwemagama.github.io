@@ -318,6 +318,13 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="adModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog bg-transparent" style="max-width: 601px;">
+                <div class="modal-content bg-transparent">
+                    <a href="https://go.fiverr.com/visit/?bta=1107667&nci=17044" Target="_blank"><img border="0" src="https://fiverr.ck-cdn.com/tn/serve/?cid=40301509"  width="601" height="501"></a>
+                </div>
+            </div>
+        </div>
         <footer class="bg-charleston-green text-white text-left py-4">
             <div class="container">
                 <p>&copy; <span id="currentYear"></span> McGama Corporation. All rights reserved.</p>
@@ -412,7 +419,12 @@ and open the template in the editor.
             }
 
             fetchAndEmbedRandomVideos();
-
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var adModal = new bootstrap.Modal(document.getElementById('adModal'));
+                adModal.show();
+            });
         </script>
     </body>
 </html>

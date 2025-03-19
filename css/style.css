@@ -62,6 +62,8 @@ button {
     height: 100%;
     object-fit: cover; /* Scale the image to cover the container */
 }
+
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .name{font-size: 290% !important;}
