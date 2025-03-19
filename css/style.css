@@ -12,13 +12,14 @@ body{color: white; font-family: 'Inter', sans-serif;}
 
 .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
 
-.nav-item:hover a{color: #444a56 !important;}
+.nav-item:hover a{color: #298095 !important;}
 
 .name{font-size: 500% !important;}
 
 .bg-charleston-green{background-color: #222a35 !important;}
 .bg-gunmetal{background-color: #29313c !important;}
 .bg-darkgunmetal{background-color: #1c222e !important;}
+.bg-moonstone{background-color: #3baec9 !important;}
 
 figure{color: #3baec9;}
 
@@ -28,13 +29,60 @@ a .fa-brands{color: white; text-decoration: none;}
 .fs-7 {font-size: 0.9rem !important;}
 
 .btn-moonstone{background-color: #3baec9; border: 0;}
-.btn:hover{background-color: rgba(246, 71, 71, 1); border: 0;}
+.btn:hover{background-color: #298095;}
+p a:hover{color: #298095;}
+
+/*.card .project{background-size: cover; background-position: center; height: 200px;}*/
+
+
+.nav-tabs .nav-link:not(.active) {
+    color: white;
+}
+
 
 .vh-30{height: 30vh;}
 
-p a {color: white; text-decoration: none;}
+p a {color: #3baec9; text-decoration: none;}
 
-@media only screen and (max-width: 576px) {
-    .name{font-size: 300% !important;}
+.nav-tabs {
+  border-bottom: none; /* Removes the horizontal line */
+}
+button {
+  border-radius: 20px !important; /* Adjust the value for more or less rounding */
+}
+
+.thumbnail-container {
+    width: 90px; /* Example size, adjust as needed */
+    height: 90px; /* Ensure width and height are equal for a square */
+    overflow: hidden; /* Prevent image from overflowing */
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image to cover the container */
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .name{font-size: 290% !important;}
+    #videoList{width: 100% !important;}
+/*    #home {height: auto !important;}
+    #about {height: auto !important;}
+    #skills {height: auto !important;}
+    #projects {height: auto !important;}
+    #beyond-code {height: auto !important;}*/
     #contact{height: auto !important;}
 }
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }

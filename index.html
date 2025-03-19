@@ -66,6 +66,9 @@ and open the template in the editor.
                             <a class="nav-link text-white" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-white" href="#beyond-code">Beyond Code</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -83,7 +86,7 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
-                                <p>Result oriented web developer, with 5 years of experience covering frontend, backend and database administration including API development. A fast and eager learner; I adopt to changing project requirements quickly to meet business requirements. And I am a firm believer in the mobile-first approach.</p>
+                                <p class="text-red">Result oriented web developer, with 5 years of experience covering frontend, backend and database administration including API development. A fast and eager learner; I adopt to changing project requirements quickly to meet business requirements. And I am a firm believer in the mobile-first approach.</p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +114,7 @@ and open the template in the editor.
         <div id="about" class="vh-100 bg-charleston-green">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center">
-                    <div class="col-lg-6 col-12 my-auto">
+                    <div class="col-lg-6 col-12">
                     </div>
                     <div class="col-lg-6 col-12 my-auto">
                         <div class="row">
@@ -178,18 +181,75 @@ and open the template in the editor.
         </div>
         <div id="projects" class="vh-100 bg-gunmetal">
             <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-lg-8 col-sm-12 my-auto d-flex justify-content-center">
-                        <img src="img/atonalrecords.png" class="img-fluid" alt="image">
-                    </div>
-                    <div class="col-lg-4 my-auto">
-                        <h4>Atonal Records</h4>
-                        <p>A website that gives a brief description about the imprint itself. It incorporates an e-commerce store where one can stream and buy the entities catalog.</p>
-                        <p><button type="button" class="btn btn-moonstone text-white" onclick="window.open('https://atonalrecords.co.za','_blank')">Visit Website</button></p>
+                <div class="row h-100 d-flex">
+                    <div class="row my-auto">
+                        <h4 class="fw-bold">Skills</h4>
+                        <p class="pb-5">Discover the skills that empower my projects and enhance my contributions.</p>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="card project text-white border-0" style="height: 450px;" >
+                                <iframe src="https://apiwemagama.github.io/" class="card-img vh-100" scrolling="no"></iframe>
+                                <div class="card-img-overlay bg-darkgunmetal top-50 position-absolute m-2">
+                                    <h5 class="card-title">Portfolio</h5>
+                                    <p class="card-text">A modern portfolio website showcasing my projects and skills.</p>
+                                    <p class="card-text"><div class="badge bg-primary">Bootstrap</div> <div class="badge bg-primary">YouTube API/Embed</div> <div class="badge bg-primary">GitHub Pages</div></p>
+                                    <p class="card-text"><a href="https://apiwemagama.github.io" target="_blank">Visit Project <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="beyond-code" class="vh-100 bg-charleston-green">
+            <div class="container h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-1g-12 col-sm-12 my-auto">
+                        <div class="row">
+                            <h3>Beyond Code</h3>
+                            <p>Exploring the intersection of art & technology.</p>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="d-flex justify-content-center pb-5">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active me-3" id="bookshelf-tab" data-bs-toggle="tab" data-bs-target="#bookshelf" type="button" role="tab" aria-controls="bookshelf" aria-selected="true">Bookshelf</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="soundtrack-tab" data-bs-toggle="tab" data-bs-target="#soundtrack" type="button" role="tab" aria-controls="soundtrack" aria-selected="false">Soundtrack</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="bookshelf" role="tabpanel" aria-labelledby="bookshelf-tab">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-6 my-auto">
+                                                <div class="card bg-gunmetal border-0">
+                                                    <div class="d-flex position-absolute z-1 end-0 rounded bg-charleston-green">
+                                                        <span class="badge bg-moonstone flex-shrink-1">Reading</span>
+                                                    </div>
+                                                    <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SY425_.jpg" class="rounded position-relative z-0" alt="Book cover">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-6 my-auto">
+                                                <div class="card bg-gunmetal border-0">
+                                                    <div class="d-flex position-absolute z-1 end-0 rounded bg-darkgunmetal">
+                                                        <span class="badge bg-moonstone flex-shrink-1">Reading</span>
+                                                    </div>
+                                                    <img src="https://m.media-amazon.com/images/I/51-sQVOd61L._SY445_SX342_.jpg" class="rounded position-relative z-0" alt="Book cover">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="soundtrack" role="tabpanel" aria-labelledby="soundtrack-tab">
+                                        <div class="row w-50 mx-auto" id="videoList"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div id="contact" class="vh-100 bg-darkgunmetal">
             <div class="container h-100 pt-5">
                 <div class="row h-100 d-flex justify-content-center">
@@ -197,10 +257,13 @@ and open the template in the editor.
                         <div class="row">
                             <div class="col-lg-12 col-sm-12">
                                 <h4 class="fw-bold">Connect</h4>
-                                <h6 class="fw-bold">Phone</h6>
-                                <p>Call on Mon - Sun from 7am to 9pm</p>
+                                <h6 class="fw-bold mb-0">Phone</h6>
                                 <p><a href="+27715599185">+27715599185</a></p>
-                                <h6 class="fw-bold">Location</h6>
+                                
+                                <h6 class="fw-bold mb-0">Calendly</h6>
+                                <p><a href="https://calendly.com/apiwemagama/30min" target="_blank">Schedule a meeting with Apiwe</a></p>
+                                
+                                <h6 class="fw-bold mb-0">Location</h6>
                                 <p>Our workplace</p>
                                 <p>844 Moremogolo Street Block M</br>Soshanguve</br>0152</p>
                                 <h6 class="fw-bold">Chat</h6>
@@ -257,6 +320,94 @@ and open the template in the editor.
         </footer>
         <script>
             document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+        <script>
+            const API_KEY = 'AIzaSyDBIXTJ2aHGw1ijCQutEIsJs5PGk4jECeY'; // Replace with your YouTube Data API key
+            const PLAYLIST_ID = 'PL56zy-6e7Tc-dg7unRNUFtEzYTgofFss9'; // Replace with your playlist ID
+            const PLAYLIST_API_URL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+
+            async function fetchAndEmbedRandomVideos() {
+                try {
+                    const response = await fetch(PLAYLIST_API_URL);
+                    const data = await response.json();
+                    const videos = data.items;
+
+                    // Select two random videos
+                    const randomVideoIndices = Array.from({ length: 2 }, () => Math.floor(Math.random() * videos.length));
+                    const randomVideos = randomVideoIndices.map(index => videos[index]);
+
+                    // Fetch video details to get duration
+                    const videoIds = randomVideos.map(video => video.snippet.resourceId.videoId);
+                    const VIDEO_API_URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${videoIds.join(',')}&key=${API_KEY}`;
+                    const videoResponse = await fetch(VIDEO_API_URL);
+                    const videoData = await videoResponse.json();
+                    const videoDetails = videoData.items;
+
+                    // Map video IDs to their durations
+                    const videoDurations = {};
+                    videoDetails.forEach(video => {
+                        videoDurations[video.id] = formatDuration(video.contentDetails.duration);
+                    });
+
+                    const videoList = document.getElementById('videoList');
+                    videoList.innerHTML = ''; // Clear the list before adding new videos
+
+                    randomVideos.forEach(video => {
+                        const videoId = video.snippet.resourceId.videoId;
+                        const title = video.snippet.title;
+                        const thumbnailUrl = video.snippet.thumbnails.medium.url; // Thumbnail URL
+                        const duration = videoDurations[videoId]; // Get duration from the video details
+
+                        // Create a card for each video
+                        const cardHtml = `
+                            <div class="col-12 mb-3">
+                                <div class="card border-0 bg-gunmetal text-white rounded">
+                                    <div class="row g-0">
+                                        <div class="col-md-2 col-3">
+                                            <div class="thumbnail-container">
+                                                <img src="${thumbnailUrl}" class="thumbnail rounded-start" alt="${title} Artwork">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-truncate">${title}</h5>
+                                                <p class="card-text text-truncate">${duration}</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-3">
+                                            <div class="card-body position-relative h-100">
+                                                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" class="btn btn-moonstone rounded-circle text-white position-absolute top-50 start-50 translate-middle"><i class="fa-solid fa-play"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+                        // Append the card to the video list
+                        videoList.innerHTML += cardHtml;
+                    });
+                } catch (error) {
+                    console.error('Error fetching playlist:', error);
+                }
+            }
+
+            // Function to format duration from ISO 8601 format
+            function formatDuration(duration) {
+                const parts = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+                let hours = parts[1] ? parseInt(parts[1].replace('H', '')) : 0;
+                let minutes = parts[2] ? parseInt(parts[2].replace('M', '')) : 0;
+                let seconds = parts[3] ? parseInt(parts[3].replace('S', '')) : 0;
+
+                if (hours > 0) {
+                    return `${hours} hours ${minutes} minutes`;
+                } else if (minutes > 0) {
+                    return `${minutes} minutes ${seconds} seconds`;
+                } else {
+                    return `${seconds} seconds`;
+                }
+            }
+
+            fetchAndEmbedRandomVideos();
+
         </script>
     </body>
 </html>
