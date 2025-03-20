@@ -39,7 +39,6 @@ p a:hover{color: #298095;}
     color: white;
 }
 
-
 .vh-30{height: 30vh;}
 
 p a {color: #3baec9; text-decoration: none;}
@@ -50,20 +49,16 @@ p a {color: #3baec9; text-decoration: none;}
 button {
   border-radius: 20px !important; /* Adjust the value for more or less rounding */
 }
-
 .thumbnail-container {
     width: 90px; /* Example size, adjust as needed */
     height: 90px; /* Ensure width and height are equal for a square */
     overflow: hidden; /* Prevent image from overflowing */
 }
-
 .thumbnail {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Scale the image to cover the container */
 }
-
-
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .name{font-size: 290% !important;}
@@ -77,14 +72,10 @@ button {
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    
 }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... }
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
