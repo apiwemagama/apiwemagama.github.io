@@ -59,6 +59,10 @@ button {
     height: 100%;
     object-fit: cover; /* Scale the image to cover the container */
 }
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .name{font-size: 290% !important;}
