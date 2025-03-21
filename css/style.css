@@ -60,8 +60,8 @@ button {
     object-fit: cover; /* Scale the image to cover the container */
 }
 .btn-close:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
