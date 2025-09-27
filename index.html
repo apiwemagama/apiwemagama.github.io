@@ -184,42 +184,46 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="projects" class="vh-100 bg-gunmetal">
-            <div class="container h-100">
-                <div class="row h-100 d-flex">
-                    <div class="row my-auto">
-                        <div class="col-12">
-                            <h4 class="fw-bold">Projects</h4>
-                            <p class="pb-4">Bringing ideas to life through code.</p>
-                        </div>
-                        <div class="col-12">
-                            <!-- Horizontal scroll on mobile, wrap into grid on md+ -->
-                            <div class="row flex-nowrap flex-md-wrap overflow-auto overflow-x-auto g-3 pb-2 snap-x hide-scrollbar">
-                                <div class="col-10 col-sm-8 col-md-4 col-lg-4 flex-shrink-0 snap-item">
-                                    <div class="card project text-white border-0" style="height: 450px;">
-                                        <iframe src="https://apiwemagama.github.io/" class="card-img vh-100" scrolling="no"></iframe>
-                                        <div class="card-img-overlay bg-darkgunmetal top-50 position-absolute m-2">
-                                            <h5 class="card-title">Portfolio</h5>
-                                            <p class="card-text">A modern portfolio website showcasing my projects and skills.</p>
-                                            <p class="card-text"><div class="badge bg-moonstone">Bootstrap</div> <div class="badge bg-moonstone">YouTube API/Embed</div> <div class="badge bg-moonstone">GitHub Pages</div></p>
-                                            <p class="card-text"><a href="https://apiwemagama.github.io" target="_blank">Visit Project <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-8 col-md-4 col-lg-4 flex-shrink-0 snap-item">
-                                    <div class="card project text-white border-0" style="height: 450px;">
-                                        <iframe src="https://brand-drab-two.vercel.app/" class="card-img vh-100" scrolling="no"></iframe>
-                                        <div class="card-img-overlay bg-darkgunmetal top-50 position-absolute m-2">
-                                            <h5 class="card-title">Brand</h5>
-                                            <p class="card-text">A frontend developer assessment completed for Accenture.</p>
-                                            <p class="card-text"><div class="badge bg-moonstone">React</div> <div class="badge bg-moonstone">Tailwind CSS</div> <div class="badge bg-moonstone">GitHub</div> <div class="badge bg-moonstone">Vercel</div></p>
-                                            <p class="card-text"><a href="https://brand-drab-two.vercel.app/" target="_blank">Visit Project <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                                        </div>
-                                    </div>
-                                </div>
+    <div id="projects" class="vh-100 bg-gunmetal d-flex flex-column justify-content-center">
+            <!-- Heading in standard container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="fw-bold">Projects</h4>
+                        <p class="pb-2">Bringing ideas to life through code.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Edge-to-edge carousel in fluid container (no side padding on mobile) -->
+            <div class="container-fluid px-0">
+                <div id="projects-carousel" class="row flex-nowrap flex-md-wrap overflow-auto overflow-x-auto g-0 g-md-3 pb-2"
+                     style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scroll-padding-left: 8.33vw; scroll-padding-right: 8.33vw;"
+                     >
+                    <!-- Mobile spacers to center first/last card -->
+                    <div class="d-block d-md-none" style="width: 8.33vw;"></div>
+                    <div class="col-10 col-sm-8 col-md-4 col-lg-4 flex-shrink-0 me-3 me-md-0" style="scroll-snap-align: center; scroll-snap-stop: always;">
+                        <div class="card project text-white border-0 overflow-hidden" style="height: 450px;">
+                            <iframe src="https://apiwemagama.github.io/" class="card-img h-100" scrolling="no"></iframe>
+                            <div class="card-img-overlay bg-darkgunmetal top-50 position-absolute m-2">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">A modern portfolio website showcasing my projects and skills.</p>
+                                <p class="card-text"><div class="badge bg-moonstone">Bootstrap</div> <div class="badge bg-moonstone">YouTube API/Embed</div> <div class="badge bg-moonstone">GitHub Pages</div></p>
+                                <p class="card-text"><a href="https://apiwemagama.github.io" target="_blank">Visit Project <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-10 col-sm-8 col-md-4 col-lg-4 flex-shrink-0 me-3 me-md-0" style="scroll-snap-align: center; scroll-snap-stop: always;">
+                        <div class="card project text-white border-0 overflow-hidden" style="height: 450px;">
+                            <iframe src="https://brand-drab-two.vercel.app/" class="card-img h-100" scrolling="no"></iframe>
+                            <div class="card-img-overlay bg-darkgunmetal top-50 position-absolute m-2">
+                                <h5 class="card-title">Brand</h5>
+                                <p class="card-text">A frontend developer assessment completed for Accenture.</p>
+                                <p class="card-text"><div class="badge bg-moonstone">React</div> <div class="badge bg-moonstone">Tailwind CSS</div> <div class="badge bg-moonstone">GitHub</div> <div class="badge bg-moonstone">Vercel</div></p>
+                                <p class="card-text"><a href="https://brand-drab-two.vercel.app/" target="_blank">Visit Project <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none" style="width: 8.33vw;"></div>
                 </div>
             </div>
         </div>

@@ -84,21 +84,11 @@ button {
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {}
 
-/* Scroll snapping helpers for horizontal card carousel */
-.snap-x {
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* smooth momentum on iOS */
-}
-.snap-item {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
-/* Hide scrollbars but keep scrolling */
-.hide-scrollbar {
+/* Hide scrollbars for Projects carousel by ID (keeps markup using Bootstrap utilities) */
+#projects-carousel {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
 }
-.hide-scrollbar::-webkit-scrollbar { /* Chrome/Safari */
+#projects-carousel::-webkit-scrollbar { /* Chrome/Safari */
     display: none;
 }
