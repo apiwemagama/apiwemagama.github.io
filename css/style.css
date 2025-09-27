@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 13 Nov 2020, 7:36:58 AM
     Author     : Aphiwe
 */
-html{scroll-behaviour: smooth;}
+html{scroll-behavior: smooth;}
 body{color: white; font-family: 'Inter', sans-serif;}
 
 .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
@@ -83,3 +83,22 @@ button {
 @media (max-width: 1199.98px) {}
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {}
+
+/* Scroll snapping helpers for horizontal card carousel */
+.snap-x {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* smooth momentum on iOS */
+}
+.snap-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* Hide scrollbars but keep scrolling */
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+.hide-scrollbar::-webkit-scrollbar { /* Chrome/Safari */
+    display: none;
+}
