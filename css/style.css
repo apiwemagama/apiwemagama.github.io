@@ -92,3 +92,11 @@ button {
 #projects-carousel::-webkit-scrollbar { /* Chrome/Safari */
     display: none;
 }
+
+/* Apply snap centering offsets only on small screens */
+@media (max-width: 575.98px) {
+    #projects-carousel { scroll-padding-left: 8.33vw; scroll-padding-right: 8.33vw; }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #projects-carousel { scroll-padding-left: 16.67vw; scroll-padding-right: 16.67vw; }
+}
