@@ -45,14 +45,15 @@ and open the template in the editor.
         </script>
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="0" class="bg-darkgunmetal">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-charleston-green fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top bg-transparent py-3">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="logo" src="img/logo-white.png" alt="Logo" height="70"></a>
-                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="custom-toggler navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="w-100 bg-gunmetal rounded-pill overflow-hidden px-3 d-flex align-items-center">
+                    <a class="navbar-brand" href="#"><img class="logo" src="img/logo-white.png" alt="Logo" height="70"></a>
+                    <button class="custom-toggler navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="custom-toggler navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Desktop nav inline -->
+                    <ul class="navbar-nav ms-auto d-none d-lg-flex">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                         </li>
@@ -73,6 +74,29 @@ and open the template in the editor.
                         </li>
                     </ul>
                 </div>
+            <!-- Mobile nav below bar -->
+                <div class="collapse d-lg-none w-100" id="navbarNav">
+                    <ul class="navbar-nav bg-gunmetal rounded-3 mt-2 px-3 py-2">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#beyond-code">Beyond Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
         <div id="home" class="vh-100 bg-charleston-green">
